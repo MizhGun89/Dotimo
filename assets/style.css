@@ -1,0 +1,130 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 auto;
+  overflow: hidden;
+  background-color: gray;
+}
+
+#box {
+  width: 800px;
+  height: 800px;
+  background-color: rgb(180, 183, 186);
+  display: flex;
+  border-radius: 10px;
+
+  border-radius: 10px;
+}
+
+#box1,
+#box2 {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  cursor: grab;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  z-index: 100;
+  border-radius: 10px;
+  transition: border-radius 0.6s;
+}
+
+.boxes-transition {
+  transition: top 0.5s, left 0.5s !important;
+}
+
+#box1 {
+  background-color: red;
+}
+
+#box2 {
+  background-color: blue;
+}
+
+.coord {
+  margin: 0;
+  font-size: 100px;
+}
+
+.select-box {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(350px, -350px);
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 100px;
+  background-color: rgb(235, 240, 245);
+  border-radius: 10px;
+}
+
+.select-box p {
+  margin: 0;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.color-box {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.color-1,
+.color-2,
+.color-3 {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  cursor: pointer;
+}
+
+.color-1 {
+  background-color: blueviolet;
+}
+
+.color-2 {
+  background-color: brown;
+}
+
+.color-3 {
+  background-color: chartreuse;
+}
+
+.btn {
+  position: absolute;
+  top: 120px;
+  padding: 10px 20px;
+  border: none;
+  background-color: rgb(101, 88, 245);
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border-radius: 10px;
+  opacity: 0;
+  transition: opacity 0.4s;
+}
+
+.btn:active {
+  background-color: rgb(81, 69, 216);
+}
